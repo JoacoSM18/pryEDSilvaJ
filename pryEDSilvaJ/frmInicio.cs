@@ -32,5 +32,11 @@ namespace pryEDSilvaJ
             frmDatosDesarrollador x = new frmDatosDesarrollador();
             x.ShowDialog();
         }
+
+        private void coloresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmColores x = new frmColores();
+            x.ShowDialog();
+        }
     }
 }

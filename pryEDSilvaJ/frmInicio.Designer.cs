@@ -57,6 +57,8 @@
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
+            this.coloresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +114,9 @@
             this.ciudadesToolStripMenuItem,
             this.provinciasToolStripMenuItem,
             this.toolStripMenuItem3,
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.toolStripMenuItem7,
+            this.coloresToolStripMenuItem1});
             this.programaciónOrientadaAObjetosToolStripMenuItem.Name = "programaciónOrientadaAObjetosToolStripMenuItem";
             this.programaciónOrientadaAObjetosToolStripMenuItem.Size = new System.Drawing.Size(202, 20);
             this.programaciónOrientadaAObjetosToolStripMenuItem.Text = "Programación Orientada a Objetos";
@@ -267,6 +271,18 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas Varias con Operaciones";
             // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(177, 6);
+            // 
+            // coloresToolStripMenuItem1
+            // 
+            this.coloresToolStripMenuItem1.Name = "coloresToolStripMenuItem1";
+            this.coloresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.coloresToolStripMenuItem1.Text = "Colores...";
+            this.coloresToolStripMenuItem1.Click += new System.EventHandler(this.coloresToolStripMenuItem1_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,6 +333,8 @@
         private System.Windows.Forms.ToolStripMenuItem operacionesEnBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem consultasVariasConOperacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem1;
     }
 }
 

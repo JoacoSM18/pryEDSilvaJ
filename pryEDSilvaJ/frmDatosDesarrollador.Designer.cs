@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(517, 361);
             this.Name = "frmDatosDesarrollador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Datos del Desarrollador";
             this.ResumeLayout(false);
 
         }
