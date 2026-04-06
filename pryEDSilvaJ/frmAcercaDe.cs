@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDSilvaJ
 {
-    public partial class frmDatosDesarrollador : Form
+    public partial class frmAcercaDe : Form
     {
-        public frmDatosDesarrollador()
+        public frmAcercaDe()
         {
             InitializeComponent();
         }

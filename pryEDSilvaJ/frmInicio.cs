@@ -29,7 +29,7 @@ namespace pryEDSilvaJ
 
         private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDatosDesarrollador x = new frmDatosDesarrollador();
+            frmAcercaDe x = new frmAcercaDe();
             x.ShowDialog();
         }
 
