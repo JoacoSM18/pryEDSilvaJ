@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 //Agregamos un espacio de nombre
 //Que tiene los metodos de procesamiento de archivos
 
@@ -37,9 +38,18 @@ namespace pryEDSilvaJ
             AD.WriteLine(Nombre); //Grabar con un <ENTER>
             AD.Close(); //Cerrar
         }
-        public void Leer()
+        public void Recorrer (ListBox lst)
         {
-
+            String DatoLeido;
+            lst.Items.Clear();
+            StreamReader AD = new StreamReader(NombArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                lst.Items.Add(DatoLeido);
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
         }
 
     }

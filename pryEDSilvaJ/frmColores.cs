@@ -27,6 +27,7 @@ namespace pryEDSilvaJ
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombArchivo = "Colores.csv";
             x.Grabar (txtNombreColor.Text);
+            x.Recorrer(lstColores);
         }
     }
 }
