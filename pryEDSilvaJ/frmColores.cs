@@ -21,5 +21,12 @@ namespace pryEDSilvaJ
         {
 
         }
+
+        private void btnGrabarColor_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombArchivo = "Colores.csv";
+            x.Grabar (txtNombreColor.Text);
+        }
     }
 }
