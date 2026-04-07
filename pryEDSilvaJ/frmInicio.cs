@@ -17,11 +17,6 @@ namespace pryEDSilvaJ
             InitializeComponent();
         }
 
-        private void coloresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -32,17 +27,21 @@ namespace pryEDSilvaJ
             frmAcercaDe x = new frmAcercaDe();
             x.ShowDialog();
         }
+        private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMeses x = new frmMeses();
+            x.ShowDialog();
+        }
 
-        private void coloresToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void coloresToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             frmColores x = new frmColores();
             x.ShowDialog();
         }
 
-        private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMeses x = new frmMeses();
-            x.ShowDialog();
+            
         }
     }
 }
