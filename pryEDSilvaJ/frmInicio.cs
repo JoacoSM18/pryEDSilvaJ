@@ -41,7 +41,14 @@ namespace pryEDSilvaJ
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmClientes x = new frmClientes();
+            x.ShowDialog();
+        }
+
+        private void alumnosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAlumnos x = new frmAlumnos();
+            x.ShowDialog();
         }
     }
 }

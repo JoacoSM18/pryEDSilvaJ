@@ -40,9 +40,10 @@
             this.ciudadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.provinciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.coloresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
+            this.coloresToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +60,6 @@
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.coloresToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,7 +117,7 @@
             this.ciudadesToolStripMenuItem,
             this.provinciasToolStripMenuItem,
             this.toolStripMenuItem3,
-            this.coloresToolStripMenuItem1,
+            this.alumnosToolStripMenuItem1,
             this.clientesToolStripMenuItem,
             this.toolStripMenuItem7,
             this.coloresToolStripMenuItem2});
@@ -160,11 +160,12 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(267, 6);
             // 
-            // coloresToolStripMenuItem1
+            // alumnosToolStripMenuItem1
             // 
-            this.coloresToolStripMenuItem1.Name = "coloresToolStripMenuItem1";
-            this.coloresToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
-            this.coloresToolStripMenuItem1.Text = "Alumnos...";
+            this.alumnosToolStripMenuItem1.Name = "alumnosToolStripMenuItem1";
+            this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.alumnosToolStripMenuItem1.Text = "Alumnos...";
+            this.alumnosToolStripMenuItem1.Click += new System.EventHandler(this.alumnosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -177,6 +178,13 @@
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(267, 6);
+            // 
+            // coloresToolStripMenuItem2
+            // 
+            this.coloresToolStripMenuItem2.Name = "coloresToolStripMenuItem2";
+            this.coloresToolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
+            this.coloresToolStripMenuItem2.Text = "Colores...";
+            this.coloresToolStripMenuItem2.Click += new System.EventHandler(this.coloresToolStripMenuItem2_Click);
             // 
             // estructurasLinealesToolStripMenuItem
             // 
@@ -287,13 +295,6 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(380, 34);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas Varias con Operaciones";
             // 
-            // coloresToolStripMenuItem2
-            // 
-            this.coloresToolStripMenuItem2.Name = "coloresToolStripMenuItem2";
-            this.coloresToolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
-            this.coloresToolStripMenuItem2.Text = "Colores...";
-            this.coloresToolStripMenuItem2.Click += new System.EventHandler(this.coloresToolStripMenuItem2_Click);
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -345,7 +346,7 @@
         private System.Windows.Forms.ToolStripMenuItem operacionesEnBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem consultasVariasConOperacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem2;
     }
