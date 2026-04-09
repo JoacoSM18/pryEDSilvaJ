@@ -46,7 +46,7 @@ namespace pryEDSilvaJ
             AD.Write(";");
             AD.Write(Dato2);
             AD.Write(";"); 
-            AD.Write(Dato3);
+            AD.WriteLine(Dato3);
             AD.Close();
         }
 
@@ -63,6 +63,32 @@ namespace pryEDSilvaJ
             }
             AD.Close();
         }
-
+        public void Recorrer(ComboBox cmb)
+        {
+            String DatoLeido;
+            cmb.Items.Clear();
+            StreamReader AD = new StreamReader(NombArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                cmb.Items.Add(DatoLeido);
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
+            cmb.SelectedIndex = 0;
+        }
+        public void Recorrer(DataGridView Grilla)
+        {
+            String DatoLeido;
+            Grilla.Rows.Clear();
+            StreamReader AD = new StreamReader(NombArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                Grilla.Rows.Add(DatoLeido.Split (';'));
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
+        }
     }
 }

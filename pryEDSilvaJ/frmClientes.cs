@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,15 @@ namespace pryEDSilvaJ
             clsArchivoTexto objCliente = new clsArchivoTexto();
             objCliente.NombArchivo = "Clientes.csv";
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
+            objCliente.Recorrer(dgvClientes);
             MessageBox.Show("Cliente Grabado Correctamente");
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+            clsArchivoTexto X = new clsArchivoTexto();
+            X.NombArchivo = "Clientes.csv";
+            if (File.Exists(X.NombArchivo)) X.Recorrer(dgvClientes);
         }
     }
 }
