@@ -16,5 +16,14 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+
+        private void btnGrabarCarrera_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombArchivo = "Meses.csv";
+            x.Grabar(txtCarrera.Text);
+            x.Recorrer(lstCarreras);
+            MessageBox.Show("Carrera Grabada Correctamente");
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace pryEDSilvaJ
             x.NombArchivo = "Meses.csv";
             x.Grabar(txtNombreMeses.Text);
             x.Recorrer(lstMeses);
+            MessageBox.Show("Mes Grabado Correctamente");
         }
     }
 }

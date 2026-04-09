@@ -51,6 +51,7 @@
             this.btnGrabarCarrera.TabIndex = 13;
             this.btnGrabarCarrera.Text = "Grabar";
             this.btnGrabarCarrera.UseVisualStyleBackColor = true;
+            this.btnGrabarCarrera.Click += new System.EventHandler(this.btnGrabarCarrera_Click);
             // 
             // txtCarrera
             // 

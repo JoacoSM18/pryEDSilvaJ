@@ -28,6 +28,7 @@ namespace pryEDSilvaJ
             x.NombArchivo = "Colores.csv";
             x.Grabar (txtNombreColor.Text);
             x.Recorrer(lstColores);
+            MessageBox.Show("Carrera Grabada Correctamente");
         }
 
         private void frmColores_Load(object sender, EventArgs e)
