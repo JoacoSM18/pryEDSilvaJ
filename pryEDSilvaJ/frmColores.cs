@@ -29,5 +29,10 @@ namespace pryEDSilvaJ
             x.Grabar (txtNombreColor.Text);
             x.Recorrer(lstColores);
         }
+
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

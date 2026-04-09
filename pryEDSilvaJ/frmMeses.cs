@@ -16,5 +16,18 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+
+        private void frmMeses_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrabarMeses_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombArchivo = "Meses.csv";
+            x.Grabar(txtNombreMeses.Text);
+            x.Recorrer(lstMeses);
+        }
     }
 }
