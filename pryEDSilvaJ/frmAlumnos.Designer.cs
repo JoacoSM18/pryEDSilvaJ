@@ -78,7 +78,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(370, 30);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(85, 20);
             this.txtCodigo.TabIndex = 3;
@@ -86,7 +86,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(159, 67);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(296, 20);
             this.txtNombre.TabIndex = 4;
@@ -94,8 +94,8 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(338, 158);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGrabar.Location = new System.Drawing.Point(340, 162);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(115, 25);
             this.btnGrabar.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.colNombre,
             this.colCarrera});
             this.dgvClientes.Location = new System.Drawing.Point(23, 229);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 62;
             this.dgvClientes.RowTemplate.Height = 28;
@@ -142,7 +142,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(159, 106);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(296, 21);
             this.comboBox1.TabIndex = 8;
@@ -161,7 +161,7 @@
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
