@@ -24,10 +24,10 @@ namespace pryEDSilvaJ
 
         private void btnGrabarMeses_Click(object sender, EventArgs e)
         {
-            clsArchivoTexto x = new clsArchivoTexto();
-            x.NombArchivo = "Meses.csv";
-            x.Grabar(txtNombreMeses.Text);
-            x.Recorrer(lstMeses);
+            clsArchivoTexto objMes = new clsArchivoTexto();
+            objMes.NombArchivo = "Meses.csv";
+            objMes.Grabar(txtNombreMeses.Text);
+            objMes.Recorrer(lstMeses);
             MessageBox.Show("Mes Grabado Correctamente");
         }
     }

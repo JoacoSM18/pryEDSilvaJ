@@ -38,6 +38,18 @@ namespace pryEDSilvaJ
             AD.WriteLine(Nombre); //Grabar con un <ENTER>
             AD.Close(); //Cerrar
         }
+
+        public void Grabar(String Dato1, String Dato2, String Dato3)
+        {
+            StreamWriter AD = new StreamWriter(NombArchivo, true);
+            AD.Write(Dato1);
+            AD.Write(";");
+            AD.Write(Dato2);
+            AD.Write(";"); 
+            AD.Write(Dato3);
+            AD.Close();
+        }
+
         public void Recorrer (ListBox lst)
         {
             String DatoLeido;

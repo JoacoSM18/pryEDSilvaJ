@@ -16,5 +16,13 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objCliente = new clsArchivoTexto();
+            objCliente.NombArchivo = "Clientes.csv";
+            objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
+            MessageBox.Show("Cliente Grabado Correctamente");
+        }
     }
 }

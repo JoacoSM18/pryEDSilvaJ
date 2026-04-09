@@ -24,10 +24,10 @@ namespace pryEDSilvaJ
 
         private void btnGrabarColor_Click(object sender, EventArgs e)
         {
-            clsArchivoTexto x = new clsArchivoTexto();
-            x.NombArchivo = "Colores.csv";
-            x.Grabar (txtNombreColor.Text);
-            x.Recorrer(lstColores);
+            clsArchivoTexto objColor = new clsArchivoTexto();
+            objColor.NombArchivo = "Colores.csv";
+            objColor.Grabar (txtNombreColor.Text);
+            objColor.Recorrer(lstColores);
             MessageBox.Show("Carrera Grabada Correctamente");
         }
 
