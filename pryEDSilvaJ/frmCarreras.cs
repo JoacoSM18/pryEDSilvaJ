@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,13 @@ namespace pryEDSilvaJ
             objCarrera.Grabar(txtCarrera.Text);
             objCarrera.Recorrer(lstCarreras);
             MessageBox.Show("Carrera Grabada Correctamente");
+        }
+
+        private void frmCarreras_Load(object sender, EventArgs e)
+        {
+            clsArchivoTexto X = new clsArchivoTexto();
+            X.NombArchivo = "Carreras.csv";
+            if (File.Exists(X.NombArchivo)) X.Recorrer(lstCarreras);
         }
     }
 }

@@ -18,6 +18,12 @@ namespace pryEDSilvaJ
             InitializeComponent();
         }
 
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+            clsArchivoTexto X = new clsArchivoTexto();
+            X.NombArchivo = "Clientes.csv";
+            if (File.Exists(X.NombArchivo)) X.Recorrer(dgvClientes);
+        }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto objCliente = new clsArchivoTexto();
@@ -25,13 +31,6 @@ namespace pryEDSilvaJ
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
             objCliente.Recorrer(dgvClientes);
             MessageBox.Show("Cliente Grabado Correctamente");
-        }
-
-        private void frmClientes_Load(object sender, EventArgs e)
-        {
-            clsArchivoTexto X = new clsArchivoTexto();
-            X.NombArchivo = "Clientes.csv";
-            if (File.Exists(X.NombArchivo)) X.Recorrer(dgvClientes);
         }
     }
 }
