@@ -22,21 +22,19 @@ namespace pryEDSilvaJ
         {
 
         }
-
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+            clsArchivoTexto X = new clsArchivoTexto();
+            X.NombArchivo = "Colores.csv";
+            if (File.Exists(X.NombArchivo)) X.Recorrer(lstColores);
+        }
         private void btnGrabarColor_Click(object sender, EventArgs e)
         {
             clsArchivoTexto objColor = new clsArchivoTexto();
             objColor.NombArchivo = "Colores.csv";
             objColor.Grabar (txtNombreColor.Text);
             objColor.Recorrer(lstColores);
-            MessageBox.Show("Carrera Grabada Correctamente");
-        }
-
-        private void frmColores_Load(object sender, EventArgs e)
-        {
-            clsArchivoTexto X = new clsArchivoTexto();
-            X.NombArchivo = "Colores.csv";
-            if (File.Exists(X.NombArchivo)) X.Recorrer(lstColores);
+            MessageBox.Show("Color Grabado Correctamente");
         }
     }
 }

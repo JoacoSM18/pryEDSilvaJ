@@ -60,6 +60,7 @@
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +119,7 @@
             this.provinciasToolStripMenuItem,
             this.toolStripMenuItem3,
             this.alumnosToolStripMenuItem1,
+            this.carrerasToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.toolStripMenuItem7,
             this.coloresToolStripMenuItem2});
@@ -295,6 +297,13 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(380, 34);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas Varias con Operaciones";
             // 
+            // carrerasToolStripMenuItem
+            // 
+            this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.carrerasToolStripMenuItem.Text = "Carreras";
+            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -308,6 +317,7 @@
             this.Name = "frmInicio";
             this.Text = "Estructura de Datos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -349,6 +359,7 @@
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem carrerasToolStripMenuItem;
     }
 }
 

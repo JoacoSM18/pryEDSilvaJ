@@ -75,7 +75,10 @@ namespace pryEDSilvaJ
                 DatoLeido = AD.ReadLine();
             }
             AD.Close();
-            cmb.SelectedIndex = 0;
+            if (cmb.Items.Count > 0)
+            {
+                cmb.SelectedIndex = 0;
+            }
         }
         public void Recorrer(DataGridView Grilla)
         {

@@ -18,7 +18,7 @@ namespace pryEDSilvaJ
             InitializeComponent();
         }
 
-        private void btnGrabarCarrera_Click(object sender, EventArgs e)
+        public void btnGrabarCarrera_Click(object sender, EventArgs e)
         {
             clsArchivoTexto objCarrera = new clsArchivoTexto();
             objCarrera.NombArchivo = "Carreras.csv";
