@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEDSilvaJ
 {
@@ -24,7 +26,7 @@ namespace pryEDSilvaJ
             set { ult = value; }
         }
         //Metodos de la Clase
-        private void Agregar(clsNodo nuevo)
+        public void Agregar(clsNodo nuevo)
         {
             if (Primero == null)
             {
@@ -49,6 +51,52 @@ namespace pryEDSilvaJ
                 Primero = Primero.Siguiente;
             }
         }
-
+        public void Recorrer(DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+        public void Recorrer(ListBox Lista)
+        {
+            clsNodo aux = Primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
+            }
+        }
+        public void Recorrer(ComboBox Combo)
+        {
+            clsNodo aux = Primero;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.Siguiente;
+            }
+        }
+        public void Recorrer()
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter("Cola.txt", false, Encoding.UTF8);
+            AD.WriteLine("Lista de Espera\n");
+            AD.WriteLine("CodigO;Nombre;Tramite");
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.Write(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
     }
 }
