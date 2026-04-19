@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvCola = new System.Windows.Forms.DataGridView();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -48,9 +51,6 @@
             this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.pcb1 = new System.Windows.Forms.PictureBox();
-            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             this.grp1.SuspendLayout();
             this.grpNuevoElemento.SuspendLayout();
@@ -74,6 +74,27 @@
             this.dgvCola.RowHeadersWidth = 62;
             this.dgvCola.Size = new System.Drawing.Size(592, 279);
             this.dgvCola.TabIndex = 0;
+            // 
+            // colCodigo
+            // 
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.MinimumWidth = 8;
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.Width = 150;
+            // 
+            // colNombre
+            // 
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.MinimumWidth = 8;
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Width = 150;
+            // 
+            // colTramite
+            // 
+            this.colTramite.HeaderText = "Trámite";
+            this.colTramite.MinimumWidth = 8;
+            this.colTramite.Name = "colTramite";
+            this.colTramite.Width = 150;
             // 
             // txtCodigo
             // 
@@ -298,27 +319,6 @@
             this.pcb1.TabIndex = 13;
             this.pcb1.TabStop = false;
             // 
-            // colCodigo
-            // 
-            this.colCodigo.HeaderText = "Código";
-            this.colCodigo.MinimumWidth = 8;
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.Width = 150;
-            // 
-            // colNombre
-            // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.MinimumWidth = 8;
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Width = 150;
-            // 
-            // colTramite
-            // 
-            this.colTramite.HeaderText = "Trámite";
-            this.colTramite.MinimumWidth = 8;
-            this.colTramite.Name = "colTramite";
-            this.colTramite.Width = 150;
-            // 
             // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -329,6 +329,7 @@
             this.Controls.Add(this.grbEliminarElemento);
             this.Controls.Add(this.grpNuevoElemento);
             this.Controls.Add(this.grp1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

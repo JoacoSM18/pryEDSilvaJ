@@ -49,12 +49,11 @@
             this.colCodigo,
             this.colNombre,
             this.colDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(25, 248);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvClientes.Location = new System.Drawing.Point(38, 382);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 62;
             this.dgvClientes.RowTemplate.Height = 28;
-            this.dgvClientes.Size = new System.Drawing.Size(514, 195);
+            this.dgvClientes.Size = new System.Drawing.Size(771, 300);
             this.dgvClientes.TabIndex = 15;
             // 
             // colCodigo
@@ -81,10 +80,9 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(354, 168);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrabar.Location = new System.Drawing.Point(531, 258);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(83, 25);
+            this.btnGrabar.Size = new System.Drawing.Size(124, 38);
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
@@ -92,36 +90,32 @@
             // 
             // txtDeuda
             // 
-            this.txtDeuda.Location = new System.Drawing.Point(354, 111);
-            this.txtDeuda.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDeuda.Location = new System.Drawing.Point(531, 171);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(85, 20);
+            this.txtDeuda.Size = new System.Drawing.Size(126, 26);
             this.txtDeuda.TabIndex = 13;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(143, 71);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(214, 109);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(296, 20);
+            this.txtNombre.Size = new System.Drawing.Size(442, 26);
             this.txtNombre.TabIndex = 12;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(354, 28);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Location = new System.Drawing.Point(531, 43);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(85, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(126, 26);
             this.txtCodigo.TabIndex = 11;
             // 
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
             this.lblDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeuda.Location = new System.Drawing.Point(80, 112);
-            this.lblDeuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDeuda.Location = new System.Drawing.Point(120, 172);
             this.lblDeuda.Name = "lblDeuda";
-            this.lblDeuda.Size = new System.Drawing.Size(54, 17);
+            this.lblDeuda.Size = new System.Drawing.Size(76, 25);
             this.lblDeuda.TabIndex = 10;
             this.lblDeuda.Text = "Deuda:";
             // 
@@ -129,10 +123,9 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(80, 71);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(120, 109);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 17);
+            this.lblNombre.Size = new System.Drawing.Size(87, 25);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -140,19 +133,18 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(80, 29);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigo.Location = new System.Drawing.Point(120, 45);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(56, 17);
+            this.lblCodigo.Size = new System.Drawing.Size(81, 25);
             this.lblCodigo.TabIndex = 8;
             this.lblCodigo.Text = "Codigo:";
             // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(566, 454);
+            this.ClientSize = new System.Drawing.Size(849, 698);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtDeuda);
@@ -161,7 +153,7 @@
             this.Controls.Add(this.lblDeuda);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

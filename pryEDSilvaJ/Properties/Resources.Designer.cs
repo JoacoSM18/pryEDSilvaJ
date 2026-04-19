@@ -103,6 +103,16 @@ namespace pryEDSilvaJ.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_business_man_avatar_png_image_6514640 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-business-man-avatar-png-image_6514640", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpaperbetter_com_1280x1024 {
             get {
                 object obj = ResourceManager.GetObject("wallpaperbetter.com_1280x1024", resourceCulture);
