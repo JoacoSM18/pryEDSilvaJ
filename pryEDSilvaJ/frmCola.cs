@@ -49,5 +49,14 @@ namespace pryEDSilvaJ
                 fila.Recorrer();
             }
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Números");
+            }
+        }
     }
 }
