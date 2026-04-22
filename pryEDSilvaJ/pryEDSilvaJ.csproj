@@ -196,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="database_102857.ico" />
+    <None Include="Resources\lista-enlazada.jpg" />
     <None Include="Resources\images1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

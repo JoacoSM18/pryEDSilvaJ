@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pcb2 = new System.Windows.Forms.PictureBox();
             this.grpEliminarElemento = new System.Windows.Forms.GroupBox();
-            this.lblTramite3D = new System.Windows.Forms.Label();
-            this.lblNombre3D = new System.Windows.Forms.Label();
-            this.lblCodigo3D = new System.Windows.Forms.Label();
-            this.lblTramite2 = new System.Windows.Forms.Label();
-            this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.grpNuevoElemento = new System.Windows.Forms.GroupBox();
@@ -47,110 +41,52 @@
             this.lblTramite = new System.Windows.Forms.Label();
             this.lstLista = new System.Windows.Forms.ListBox();
             this.dgvPila = new System.Windows.Forms.DataGridView();
-            this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp3 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).BeginInit();
+            this.cmbCodigo = new System.Windows.Forms.ComboBox();
+            this.pcb2 = new System.Windows.Forms.PictureBox();
             this.grpEliminarElemento.SuspendLayout();
             this.grpNuevoElemento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
             this.grp3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pcb2
-            // 
-            this.pcb2.Image = global::pryEDSilvaJ.Properties.Resources.images1;
-            this.pcb2.Location = new System.Drawing.Point(12, 12);
-            this.pcb2.Name = "pcb2";
-            this.pcb2.Size = new System.Drawing.Size(259, 218);
-            this.pcb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcb2.TabIndex = 21;
-            this.pcb2.TabStop = false;
             // 
             // grpEliminarElemento
             // 
-            this.grpEliminarElemento.Controls.Add(this.lblTramite3D);
-            this.grpEliminarElemento.Controls.Add(this.lblNombre3D);
-            this.grpEliminarElemento.Controls.Add(this.lblCodigo3D);
-            this.grpEliminarElemento.Controls.Add(this.lblTramite2);
-            this.grpEliminarElemento.Controls.Add(this.lblNombre2);
+            this.grpEliminarElemento.Controls.Add(this.cmbCodigo);
             this.grpEliminarElemento.Controls.Add(this.lblCodigo2);
             this.grpEliminarElemento.Controls.Add(this.btnBorrar);
             this.grpEliminarElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEliminarElemento.Location = new System.Drawing.Point(518, 12);
+            this.grpEliminarElemento.Location = new System.Drawing.Point(777, 18);
+            this.grpEliminarElemento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpEliminarElemento.Name = "grpEliminarElemento";
-            this.grpEliminarElemento.Size = new System.Drawing.Size(178, 218);
+            this.grpEliminarElemento.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpEliminarElemento.Size = new System.Drawing.Size(291, 335);
             this.grpEliminarElemento.TabIndex = 20;
             this.grpEliminarElemento.TabStop = false;
             this.grpEliminarElemento.Text = "Eliminar Elemento";
-            // 
-            // lblTramite3D
-            // 
-            this.lblTramite3D.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTramite3D.Location = new System.Drawing.Point(82, 140);
-            this.lblTramite3D.Name = "lblTramite3D";
-            this.lblTramite3D.Size = new System.Drawing.Size(90, 23);
-            this.lblTramite3D.TabIndex = 15;
-            this.lblTramite3D.Text = " ";
-            this.lblTramite3D.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNombre3D
-            // 
-            this.lblNombre3D.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNombre3D.Location = new System.Drawing.Point(82, 84);
-            this.lblNombre3D.Name = "lblNombre3D";
-            this.lblNombre3D.Size = new System.Drawing.Size(90, 23);
-            this.lblNombre3D.TabIndex = 14;
-            this.lblNombre3D.Text = " ";
-            this.lblNombre3D.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCodigo3D
-            // 
-            this.lblCodigo3D.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCodigo3D.Location = new System.Drawing.Point(113, 23);
-            this.lblCodigo3D.Name = "lblCodigo3D";
-            this.lblCodigo3D.Size = new System.Drawing.Size(59, 23);
-            this.lblCodigo3D.TabIndex = 13;
-            this.lblCodigo3D.Text = " ";
-            this.lblCodigo3D.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTramite2
-            // 
-            this.lblTramite2.AutoSize = true;
-            this.lblTramite2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite2.Location = new System.Drawing.Point(6, 147);
-            this.lblTramite2.Name = "lblTramite2";
-            this.lblTramite2.Size = new System.Drawing.Size(56, 16);
-            this.lblTramite2.TabIndex = 13;
-            this.lblTramite2.Text = "Trámite:";
-            // 
-            // lblNombre2
-            // 
-            this.lblNombre2.AutoSize = true;
-            this.lblNombre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre2.Location = new System.Drawing.Point(6, 87);
-            this.lblNombre2.Name = "lblNombre2";
-            this.lblNombre2.Size = new System.Drawing.Size(62, 16);
-            this.lblNombre2.TabIndex = 13;
-            this.lblNombre2.Text = "Nombre: ";
             // 
             // lblCodigo2
             // 
             this.lblCodigo2.AutoSize = true;
             this.lblCodigo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo2.Location = new System.Drawing.Point(6, 30);
+            this.lblCodigo2.Location = new System.Drawing.Point(24, 215);
+            this.lblCodigo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo2.Name = "lblCodigo2";
-            this.lblCodigo2.Size = new System.Drawing.Size(57, 16);
+            this.lblCodigo2.Size = new System.Drawing.Size(81, 24);
             this.lblCodigo2.TabIndex = 13;
             this.lblCodigo2.Text = "Codigo: ";
             // 
             // btnBorrar
             // 
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(6, 181);
+            this.btnBorrar.Location = new System.Drawing.Point(9, 278);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(166, 31);
+            this.btnBorrar.Size = new System.Drawing.Size(249, 48);
             this.btnBorrar.TabIndex = 8;
             this.btnBorrar.Text = "Eliminar";
             this.btnBorrar.UseVisualStyleBackColor = true;
@@ -165,9 +101,11 @@
             this.grpNuevoElemento.Controls.Add(this.txtTramite);
             this.grpNuevoElemento.Controls.Add(this.lblTramite);
             this.grpNuevoElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpNuevoElemento.Location = new System.Drawing.Point(289, 12);
+            this.grpNuevoElemento.Location = new System.Drawing.Point(437, 18);
+            this.grpNuevoElemento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpNuevoElemento.Name = "grpNuevoElemento";
-            this.grpNuevoElemento.Size = new System.Drawing.Size(199, 218);
+            this.grpNuevoElemento.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpNuevoElemento.Size = new System.Drawing.Size(332, 335);
             this.grpNuevoElemento.TabIndex = 19;
             this.grpNuevoElemento.TabStop = false;
             this.grpNuevoElemento.Text = "Nuevo Elemento";
@@ -175,9 +113,10 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(9, 181);
+            this.btnAgregar.Location = new System.Drawing.Point(14, 278);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(184, 31);
+            this.btnAgregar.Size = new System.Drawing.Size(276, 48);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -186,9 +125,10 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(6, 30);
+            this.lblCodigo.Location = new System.Drawing.Point(9, 46);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(57, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(81, 24);
             this.lblCodigo.TabIndex = 4;
             this.lblCodigo.Text = "Codigo: ";
             // 
@@ -196,40 +136,45 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(6, 87);
+            this.lblNombre.Location = new System.Drawing.Point(9, 128);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 16);
+            this.lblNombre.Size = new System.Drawing.Size(89, 24);
             this.lblNombre.TabIndex = 5;
             this.lblNombre.Text = "Nombre: ";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(91, 22);
+            this.txtCodigo.Location = new System.Drawing.Point(178, 40);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(102, 23);
+            this.txtCodigo.Size = new System.Drawing.Size(109, 30);
             this.txtCodigo.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(91, 80);
+            this.txtNombre.Location = new System.Drawing.Point(136, 122);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(102, 23);
+            this.txtNombre.Size = new System.Drawing.Size(151, 30);
             this.txtNombre.TabIndex = 2;
             // 
             // txtTramite
             // 
-            this.txtTramite.Location = new System.Drawing.Point(91, 136);
+            this.txtTramite.Location = new System.Drawing.Point(136, 209);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(102, 23);
+            this.txtTramite.Size = new System.Drawing.Size(151, 30);
             this.txtTramite.TabIndex = 3;
             // 
             // lblTramite
             // 
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite.Location = new System.Drawing.Point(6, 143);
+            this.lblTramite.Location = new System.Drawing.Point(9, 215);
+            this.lblTramite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(56, 16);
+            this.lblTramite.Size = new System.Drawing.Size(78, 24);
             this.lblTramite.TabIndex = 6;
             this.lblTramite.Text = "Trámite:";
             // 
@@ -238,9 +183,11 @@
             this.lstLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(6, 19);
+            this.lstLista.ItemHeight = 20;
+            this.lstLista.Location = new System.Drawing.Point(8, 23);
+            this.lstLista.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(266, 251);
+            this.lstLista.Size = new System.Drawing.Size(389, 304);
             this.lstLista.TabIndex = 9;
             // 
             // dgvPila
@@ -253,25 +200,12 @@
             this.colCodigo,
             this.colNombre,
             this.colTramite});
-            this.dgvPila.Location = new System.Drawing.Point(291, 19);
+            this.dgvPila.Location = new System.Drawing.Point(419, 29);
+            this.dgvPila.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvPila.Name = "dgvPila";
-            this.dgvPila.RowHeadersWidth = 4;
-            this.dgvPila.Size = new System.Drawing.Size(407, 251);
+            this.dgvPila.RowHeadersWidth = 170;
+            this.dgvPila.Size = new System.Drawing.Size(624, 294);
             this.dgvPila.TabIndex = 0;
-            // 
-            // colTramite
-            // 
-            this.colTramite.HeaderText = "Trámite";
-            this.colTramite.MinimumWidth = 8;
-            this.colTramite.Name = "colTramite";
-            this.colTramite.Width = 150;
-            // 
-            // colNombre
-            // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.MinimumWidth = 8;
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Width = 150;
             // 
             // colCodigo
             // 
@@ -280,36 +214,73 @@
             this.colCodigo.Name = "colCodigo";
             this.colCodigo.Width = 150;
             // 
+            // colNombre
+            // 
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.MinimumWidth = 8;
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Width = 150;
+            // 
+            // colTramite
+            // 
+            this.colTramite.HeaderText = "Trámite";
+            this.colTramite.MinimumWidth = 8;
+            this.colTramite.Name = "colTramite";
+            this.colTramite.Width = 150;
+            // 
             // grp3
             // 
             this.grp3.Controls.Add(this.dgvPila);
             this.grp3.Controls.Add(this.lstLista);
-            this.grp3.Location = new System.Drawing.Point(7, 245);
+            this.grp3.Location = new System.Drawing.Point(18, 363);
+            this.grp3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grp3.Name = "grp3";
-            this.grp3.Size = new System.Drawing.Size(700, 288);
+            this.grp3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grp3.Size = new System.Drawing.Size(1050, 336);
             this.grp3.TabIndex = 22;
             this.grp3.TabStop = false;
-            this.grp3.Text = "Listad en List Box y Grilla";
+            this.grp3.Text = "Listado en un List Box y Grilla";
+            // 
+            // cmbCodigo
+            // 
+            this.cmbCodigo.FormattingEnabled = true;
+            this.cmbCodigo.Location = new System.Drawing.Point(107, 206);
+            this.cmbCodigo.Name = "cmbCodigo";
+            this.cmbCodigo.Size = new System.Drawing.Size(151, 33);
+            this.cmbCodigo.TabIndex = 14;
+            // 
+            // pcb2
+            // 
+            this.pcb2.Image = global::pryEDSilvaJ.Properties.Resources.lista_enlazada;
+            this.pcb2.Location = new System.Drawing.Point(18, 18);
+            this.pcb2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pcb2.Name = "pcb2";
+            this.pcb2.Size = new System.Drawing.Size(397, 335);
+            this.pcb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcb2.TabIndex = 21;
+            this.pcb2.TabStop = false;
             // 
             // frmListaSimple
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 545);
+            this.BackColor = System.Drawing.Color.SandyBrown;
+            this.ClientSize = new System.Drawing.Size(1084, 769);
             this.Controls.Add(this.grp3);
             this.Controls.Add(this.pcb2);
             this.Controls.Add(this.grpEliminarElemento);
             this.Controls.Add(this.grpNuevoElemento);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de Datos Lineal - Lista Simple";
-            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).EndInit();
             this.grpEliminarElemento.ResumeLayout(false);
             this.grpEliminarElemento.PerformLayout();
             this.grpNuevoElemento.ResumeLayout(false);
             this.grpNuevoElemento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
             this.grp3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,11 +289,6 @@
 
         private System.Windows.Forms.PictureBox pcb2;
         private System.Windows.Forms.GroupBox grpEliminarElemento;
-        private System.Windows.Forms.Label lblTramite3D;
-        private System.Windows.Forms.Label lblNombre3D;
-        private System.Windows.Forms.Label lblCodigo3D;
-        private System.Windows.Forms.Label lblTramite2;
-        private System.Windows.Forms.Label lblNombre2;
         private System.Windows.Forms.Label lblCodigo2;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.GroupBox grpNuevoElemento;
@@ -339,5 +305,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTramite;
         private System.Windows.Forms.GroupBox grp3;
+        private System.Windows.Forms.ComboBox cmbCodigo;
     }
 }
