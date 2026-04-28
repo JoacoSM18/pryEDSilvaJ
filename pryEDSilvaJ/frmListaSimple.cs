@@ -16,5 +16,24 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+        clsListaSimple ListaSimple = new clsListaSimple();
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            clsNodo n = new clsNodo();
+            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Nombre = txtNombre.Text;
+            n.Tramite = txtTramite.Text;
+            ListaSimple.Agregar(n);
+            ListaSimple.Recorrer(lstLista);
+            ListaSimple.Recorrer(lstLista);
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
