@@ -41,7 +41,7 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
             this.lstLista = new System.Windows.Forms.ListBox();
-            this.dgvPila = new System.Windows.Forms.DataGridView();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,7 @@
             this.pcb2 = new System.Windows.Forms.PictureBox();
             this.grpEliminarElemento.SuspendLayout();
             this.grpNuevoElemento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.grp3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb2)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             // 
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(71, 134);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(102, 24);
             this.cmbCodigo.TabIndex = 14;
@@ -186,21 +186,21 @@
             this.lstLista.Size = new System.Drawing.Size(261, 199);
             this.lstLista.TabIndex = 9;
             // 
-            // dgvPila
+            // dgvLista
             // 
-            this.dgvPila.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvLista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodigo,
             this.colNombre,
             this.colTramite});
-            this.dgvPila.Location = new System.Drawing.Point(279, 19);
-            this.dgvPila.Name = "dgvPila";
-            this.dgvPila.RowHeadersWidth = 170;
-            this.dgvPila.Size = new System.Drawing.Size(416, 191);
-            this.dgvPila.TabIndex = 0;
+            this.dgvLista.Location = new System.Drawing.Point(279, 19);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.RowHeadersWidth = 170;
+            this.dgvLista.Size = new System.Drawing.Size(416, 191);
+            this.dgvLista.TabIndex = 0;
             // 
             // colCodigo
             // 
@@ -225,7 +225,7 @@
             // 
             // grp3
             // 
-            this.grp3.Controls.Add(this.dgvPila);
+            this.grp3.Controls.Add(this.dgvLista);
             this.grp3.Controls.Add(this.lstLista);
             this.grp3.Location = new System.Drawing.Point(12, 236);
             this.grp3.Name = "grp3";
@@ -261,7 +261,7 @@
             this.grpEliminarElemento.PerformLayout();
             this.grpNuevoElemento.ResumeLayout(false);
             this.grpNuevoElemento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.grp3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcb2)).EndInit();
             this.ResumeLayout(false);
@@ -283,7 +283,7 @@
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.ListBox lstLista;
-        private System.Windows.Forms.DataGridView dgvPila;
+        private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTramite;

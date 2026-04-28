@@ -24,7 +24,7 @@ namespace pryEDSilvaJ
             n.Nombre = txtNombre.Text;
             n.Tramite = txtTramite.Text;
             ListaSimple.Agregar(n);
-            ListaSimple.Recorrer(lstLista);
+            ListaSimple.Recorrer(dgvLista);
             ListaSimple.Recorrer(lstLista);
             txtCodigo.Text = "";
             txtNombre.Text = "";
