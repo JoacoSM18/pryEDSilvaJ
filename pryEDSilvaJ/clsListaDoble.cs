@@ -95,6 +95,16 @@ namespace pryEDSilvaJ
                 aux = aux.Siguiente;
             }
         }
+        public void Recorrer(ListBox ListaBox)
+        {
+            clsNodo aux = Primero;
+            ListaBox.Items.Clear();
+            while (aux != null)
+            {
+                ListaBox.Items.Add(aux.Nombre);
+                aux = aux.Siguiente;
+            }
+        }
         public void Recorrer (String NombreArchivo)
         {
             clsNodo aux = Primero;

@@ -33,7 +33,7 @@
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstLista = new System.Windows.Forms.ListBox();
+            this.lstListaDoble = new System.Windows.Forms.ListBox();
             this.pcb2 = new System.Windows.Forms.PictureBox();
             this.grpEliminarElemento = new System.Windows.Forms.GroupBox();
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
@@ -61,7 +61,7 @@
             // grp3
             // 
             this.grp3.Controls.Add(this.dgvListaDoble);
-            this.grp3.Controls.Add(this.lstLista);
+            this.grp3.Controls.Add(this.lstListaDoble);
             this.grp3.Location = new System.Drawing.Point(9, 241);
             this.grp3.Name = "grp3";
             this.grp3.Size = new System.Drawing.Size(695, 218);
@@ -106,15 +106,15 @@
             this.colTramite.Name = "colTramite";
             this.colTramite.Width = 150;
             // 
-            // lstLista
+            // lstListaDoble
             // 
-            this.lstLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lstListaDoble.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(5, 15);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(254, 199);
-            this.lstLista.TabIndex = 9;
+            this.lstListaDoble.FormattingEnabled = true;
+            this.lstListaDoble.Location = new System.Drawing.Point(5, 15);
+            this.lstListaDoble.Name = "lstListaDoble";
+            this.lstListaDoble.Size = new System.Drawing.Size(254, 199);
+            this.lstListaDoble.TabIndex = 9;
             // 
             // pcb2
             // 
@@ -320,7 +320,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTramite;
-        private System.Windows.Forms.ListBox lstLista;
+        private System.Windows.Forms.ListBox lstListaDoble;
         private System.Windows.Forms.PictureBox pcb2;
         private System.Windows.Forms.GroupBox grpEliminarElemento;
         private System.Windows.Forms.ComboBox cmbCodigo;

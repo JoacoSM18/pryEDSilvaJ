@@ -33,7 +33,7 @@ namespace pryEDSilvaJ
 
             Lista.Agregar(ObjNodo);
             Lista.Recorrer(dgvListaDoble);
-            Lista.Recorrer(lstLista);
+            Lista.Recorrer(lstListaDoble);
             Lista.Recorrer(dgvListaDoble);
             Lista.Recorrer("clsListaDoble.csv");
 
