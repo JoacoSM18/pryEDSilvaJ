@@ -111,7 +111,7 @@ namespace pryEDSilvaJ
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("ListaSimple.txt", false, Encoding.UTF8);
             AD.WriteLine("Lista de Espera\n");
-            AD.WriteLine("CodigO;Nombre;Tramite");
+            AD.WriteLine("Codigo;Nombre;Tramite");
             while (aux != null)
             {
                 AD.Write(aux.Codigo);
