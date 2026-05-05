@@ -69,6 +69,7 @@
             // 
             // cmbCodigo
             // 
+            this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(71, 134);
             this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2);
@@ -257,6 +258,7 @@
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de Datos Lineal - Lista Simple";
+            this.Load += new System.EventHandler(this.frmListaSimple_Load);
             this.grpEliminarElemento.ResumeLayout(false);
             this.grpEliminarElemento.PerformLayout();
             this.grpNuevoElemento.ResumeLayout(false);

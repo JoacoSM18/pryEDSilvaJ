@@ -65,7 +65,46 @@ namespace pryEDSilvaJ
                 }
             }
         }
-        public void Recorrer(DataGridView Grilla)
+
+        public void Eliminar (Int32 Codigo)
+        {
+            if (Primero.Codigo == Codigo && Ultimo == Primero)
+            {
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            {
+                if (Primero.Codigo == Codigo)
+                {
+                    Primero = Primero.Siguiente;
+                    Primero.Anterior = null;
+                }
+                else
+                {
+                    if (Ultimo.Codigo == Codigo)
+                    {
+                        Ultimo = Ultimo.Anterior;
+                        Ultimo.Siguiente = null;
+                    }
+                    else
+                    { 
+                        clsNodo aux = Primero;
+                        clsNodo ant = Primero;
+                        while (aux.Codigo < Codigo)
+                        {
+                            ant = aux;
+                            aux = aux.Siguiente;
+                        }
+                        aux = aux.Siguiente;
+                        aux.Anterior = ant;
+                        ant.Siguiente = aux;
+                    }
+                }
+            }
+        }
+
+        public void RecorrerAsc(DataGridView Grilla)
         {
             clsNodo aux = Primero;
             Grilla.Rows.Clear();

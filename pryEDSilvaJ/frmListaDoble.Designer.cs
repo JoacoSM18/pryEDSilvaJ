@@ -68,6 +68,7 @@
             this.grp3.TabIndex = 26;
             this.grp3.TabStop = false;
             this.grp3.Text = "Listado en un List Box y Grilla";
+            this.grp3.Enter += new System.EventHandler(this.grp3_Enter);
             // 
             // dgvListaDoble
             // 
@@ -141,9 +142,10 @@
             // 
             // cmbCodigo
             // 
+            this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(64, 36);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(121, 24);
             this.cmbCodigo.TabIndex = 14;
@@ -167,6 +169,7 @@
             this.btnBorrar.TabIndex = 8;
             this.btnBorrar.Text = "Eliminar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // grpNuevoElemento
             // 
@@ -253,9 +256,9 @@
             this.grp4.Controls.Add(this.btnAsc);
             this.grp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp4.Location = new System.Drawing.Point(495, 129);
-            this.grp4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grp4.Margin = new System.Windows.Forms.Padding(2);
             this.grp4.Name = "grp4";
-            this.grp4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grp4.Padding = new System.Windows.Forms.Padding(2);
             this.grp4.Size = new System.Drawing.Size(192, 97);
             this.grp4.TabIndex = 27;
             this.grp4.TabStop = false;
@@ -265,25 +268,27 @@
             // 
             this.btnDesc.AutoSize = true;
             this.btnDesc.Location = new System.Drawing.Point(8, 67);
-            this.btnDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDesc.Margin = new System.Windows.Forms.Padding(2);
             this.btnDesc.Name = "btnDesc";
             this.btnDesc.Size = new System.Drawing.Size(110, 21);
             this.btnDesc.TabIndex = 1;
             this.btnDesc.TabStop = true;
             this.btnDesc.Text = "Descendente";
             this.btnDesc.UseVisualStyleBackColor = true;
+            this.btnDesc.CheckedChanged += new System.EventHandler(this.btnDesc_CheckedChanged);
             // 
             // btnAsc
             // 
             this.btnAsc.AutoSize = true;
             this.btnAsc.Location = new System.Drawing.Point(8, 32);
-            this.btnAsc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAsc.Margin = new System.Windows.Forms.Padding(2);
             this.btnAsc.Name = "btnAsc";
             this.btnAsc.Size = new System.Drawing.Size(101, 21);
             this.btnAsc.TabIndex = 0;
             this.btnAsc.TabStop = true;
             this.btnAsc.Text = "Ascendente";
             this.btnAsc.UseVisualStyleBackColor = true;
+            this.btnAsc.CheckedChanged += new System.EventHandler(this.btnAsc_CheckedChanged);
             // 
             // frmListaDoble
             // 
