@@ -55,6 +55,12 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArbol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmArbol.resx">
       <DependentUpon>frmArbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
