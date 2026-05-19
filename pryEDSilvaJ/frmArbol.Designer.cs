@@ -38,10 +38,10 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
             this.grpEliminarElemento = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.btnEquilibrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.RadioButton();
             this.btn2 = new System.Windows.Forms.RadioButton();
             this.btn3 = new System.Windows.Forms.RadioButton();
@@ -89,6 +89,7 @@
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblCodigo
             // 
@@ -154,6 +155,16 @@
             this.grpEliminarElemento.TabStop = false;
             this.grpEliminarElemento.Text = "Elemento a Eliminar";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(6, 101);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 35);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // cmbCodigo
             // 
             this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -183,16 +194,6 @@
             this.btnEquilibrar.TabIndex = 8;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 35);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn1
             // 
@@ -290,6 +291,7 @@
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Arbol Binario";
+            this.Load += new System.EventHandler(this.frmArbol_Load);
             this.grpNuevoElemento.ResumeLayout(false);
             this.grpNuevoElemento.PerformLayout();
             this.grpEliminarElemento.ResumeLayout(false);

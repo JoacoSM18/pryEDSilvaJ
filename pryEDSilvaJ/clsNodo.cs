@@ -42,5 +42,16 @@ namespace pryEDSilvaJ
             get { return ant; }
             set { ant = value; }
         }
+        public clsNodo Derecho
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+
+        public clsNodo Izquierdo
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
     }
 }

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace pryEDSilvaJ
 {
-    public partial class frmArbol : Form
+    public partial class frmConsultaTabla : Form
     {
-        public frmArbol()
+        public frmConsultaTabla()
         {
             InitializeComponent();
-        }
-
-        private void frmArbol_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
