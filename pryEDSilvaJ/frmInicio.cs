@@ -85,5 +85,11 @@ namespace pryEDSilvaJ
             frmListaDoble x = new frmListaDoble();
             x.ShowDialog();
         }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbol x = new frmArbol();
+            x.ShowDialog();
+        }
     }
 }

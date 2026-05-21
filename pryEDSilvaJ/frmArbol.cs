@@ -16,7 +16,7 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
-
+        clsArbol ObjArbol = new clsArbol();
         private void frmArbol_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +24,13 @@ namespace pryEDSilvaJ
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            clsNodo Persona = new clsNodo();
+            Persona.Codigo = Convert.ToInt32(txtCodigo.Text);
+            Persona.Nombre = txtNombre.Text;
+            Persona.Tramite = txtTramite.Text;
+            ObjArbol.Agregar(Persona);
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(trvArbol);
         }
     }
 }

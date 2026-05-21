@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.trvArbol = new System.Windows.Forms.TreeView();
             this.grpNuevoElemento = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblCodigo = new System.Windows.Forms.Label();
@@ -46,22 +46,22 @@
             this.btn2 = new System.Windows.Forms.RadioButton();
             this.btn3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvListaDoble = new System.Windows.Forms.DataGridView();
+            this.dgvArbol = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpNuevoElemento.SuspendLayout();
             this.grpEliminarElemento.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArbol)).BeginInit();
             this.SuspendLayout();
             // 
-            // treeView1
+            // trvArbol
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 12);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(220, 191);
-            this.treeView1.TabIndex = 0;
+            this.trvArbol.Location = new System.Drawing.Point(12, 12);
+            this.trvArbol.Name = "trvArbol";
+            this.trvArbol.Size = new System.Drawing.Size(220, 191);
+            this.trvArbol.TabIndex = 0;
             // 
             // grpNuevoElemento
             // 
@@ -230,7 +230,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dgvListaDoble);
+            this.groupBox1.Controls.Add(this.dgvArbol);
             this.groupBox1.Controls.Add(this.btn3);
             this.groupBox1.Controls.Add(this.btn2);
             this.groupBox1.Controls.Add(this.btn1);
@@ -241,21 +241,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Arbol";
             // 
-            // dgvListaDoble
+            // dgvArbol
             // 
-            this.dgvListaDoble.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvArbol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvListaDoble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaDoble.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArbol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArbol.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodigo,
             this.colNombre,
             this.colTramite});
-            this.dgvListaDoble.Location = new System.Drawing.Point(236, 19);
-            this.dgvListaDoble.Name = "dgvListaDoble";
-            this.dgvListaDoble.RowHeadersWidth = 40;
-            this.dgvListaDoble.Size = new System.Drawing.Size(348, 138);
-            this.dgvListaDoble.TabIndex = 29;
+            this.dgvArbol.Location = new System.Drawing.Point(236, 19);
+            this.dgvArbol.Name = "dgvArbol";
+            this.dgvArbol.RowHeadersWidth = 40;
+            this.dgvArbol.Size = new System.Drawing.Size(348, 138);
+            this.dgvArbol.TabIndex = 29;
             // 
             // colCodigo
             // 
@@ -287,7 +287,7 @@
             this.Controls.Add(this.grpEliminarElemento);
             this.Controls.Add(this.grpNuevoElemento);
             this.Controls.Add(this.btnEquilibrar);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.trvArbol);
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Arbol Binario";
@@ -298,14 +298,14 @@
             this.grpEliminarElemento.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArbol)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView trvArbol;
         private System.Windows.Forms.GroupBox grpNuevoElemento;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblCodigo;
@@ -323,7 +323,7 @@
         private System.Windows.Forms.RadioButton btn2;
         private System.Windows.Forms.RadioButton btn3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgvListaDoble;
+        private System.Windows.Forms.DataGridView dgvArbol;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTramite;
