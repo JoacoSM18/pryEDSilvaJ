@@ -16,5 +16,22 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+        clsGrafoMatricial grafo = new clsGrafoMatricial();
+
+        private void frmGrafo_Load(object sender, EventArgs e)
+        {
+            grafo.MostrarCiudades(cmbOrigenes);
+            grafo.MostrarCiudades(cmbDestinos);
+            grafo.MostrarCiudades(cmbDestinos2);
+            grafo.MostrarCiudades(cmbOrigenes2);
+            grafo.MostrarCiudades(cmbDesde);
+            grafo.MostrarCiudades(cmbHasta);
+            grafo.MostrarTodo(dgvViajes);
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
