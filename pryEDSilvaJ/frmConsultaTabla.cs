@@ -16,5 +16,11 @@ namespace pryEDSilvaJ
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDatos bd = new clsBaseDatos();
+            bd.Listar1(cmbTablas.Text, dgvDatos);
+        }
     }
 }

@@ -77,7 +77,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(572, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(627, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -211,33 +211,33 @@
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.colaToolStripMenuItem.Text = "Cola...";
             this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.pilaToolStripMenuItem.Text = "Pila...";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(143, 6);
             // 
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.listaSimpleToolStripMenuItem.Text = "Lista Simple...";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.listaDobleToolStripMenuItem.Text = "Lista Doble";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
@@ -253,14 +253,14 @@
             // arbolToolStripMenuItem
             // 
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.arbolToolStripMenuItem.Text = "Arbol...";
             this.arbolToolStripMenuItem.Click += new System.EventHandler(this.arbolToolStripMenuItem_Click);
             // 
             // grafoToolStripMenuItem
             // 
             this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
-            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.grafoToolStripMenuItem.Text = "Grafo...";
             // 
             // baseDeDatosToolStripMenuItem
@@ -281,6 +281,7 @@
             this.consultaUnaTablaToolStripMenuItem.Name = "consultaUnaTablaToolStripMenuItem";
             this.consultaUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.consultaUnaTablaToolStripMenuItem.Text = "Consulta de una Tabla...";
+            this.consultaUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.consultaUnaTablaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -316,7 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryEDSilvaJ.Properties.Resources.wallpaperbetter_com_1280x1024;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(572, 459);
+            this.ClientSize = new System.Drawing.Size(627, 459);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;

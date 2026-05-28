@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="clsArbol.cs" />
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsGrafoMatricial.cs" />
     <Compile Include="clsListaDoble.cs" />

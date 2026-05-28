@@ -91,5 +91,11 @@ namespace pryEDSilvaJ
             frmArbol x = new frmArbol();
             x.ShowDialog();
         }
+
+        private void consultaUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTabla x = new frmConsultaTabla();
+            x.ShowDialog();
+        }
     }
 }
