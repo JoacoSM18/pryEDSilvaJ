@@ -43,9 +43,9 @@
             "Idioma",
             "Libro",
             "Pais"});
-            this.cmbTablas.Location = new System.Drawing.Point(248, 413);
+            this.cmbTablas.Location = new System.Drawing.Point(220, 413);
             this.cmbTablas.Name = "cmbTablas";
-            this.cmbTablas.Size = new System.Drawing.Size(115, 21);
+            this.cmbTablas.Size = new System.Drawing.Size(143, 21);
             this.cmbTablas.TabIndex = 0;
             // 
             // dgvDatos
