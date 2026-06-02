@@ -293,6 +293,7 @@
             this.consultaDeBaseDeDatosToolStripMenuItem.Name = "consultaDeBaseDeDatosToolStripMenuItem";
             this.consultaDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.consultaDeBaseDeDatosToolStripMenuItem.Text = "Consulta de Base de Datos";
+            this.consultaDeBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeBaseDeDatosToolStripMenuItem_Click);
             // 
             // operacionesEnBaseDeDatosToolStripMenuItem
             // 

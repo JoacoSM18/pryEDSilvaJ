@@ -58,6 +58,12 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="frmConsultaSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSQL.Designer.cs">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaTabla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsultaSQL.resx">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaTabla.resx">
       <DependentUpon>frmConsultaTabla.cs</DependentUpon>
     </EmbeddedResource>

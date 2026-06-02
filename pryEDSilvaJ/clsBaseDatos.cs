@@ -18,7 +18,7 @@ namespace pryEDSilvaJ
         private string cadenaConexion2 = "Provider=Micorsoft.Jet.OLEDB.12.0;Data Source=Libreria.mdb";
 
 
-        public void Listar (DataGridView Grilla)
+        public void Listar(DataGridView Grilla)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace pryEDSilvaJ
                 MessageBox.Show(ex.Message);
             }
         }
-        public void Listar1( String tabla, DataGridView Grilla)
+        public void Listar1(String tabla, DataGridView Grilla)
         {
             try
             {
@@ -52,6 +52,28 @@ namespace pryEDSilvaJ
                 adaptador.Fill(DS, tabla);
                 Grilla.DataSource = null;
                 Grilla.DataSource = DS.Tables[tabla];
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexion.Close();
+            }
+        }
+        public void Listar(DataGridView Grilla, String varInstrucionSQL)
+        {
+            try
+            {
+                conexion.ConnectionString = cadenaConexion1;
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = varInstrucionSQL;
+                adaptador = new OleDbDataAdapter(comando);
+                DataSet DS = new DataSet();
+                adaptador.Fill(DS, "Resultado");
+                Grilla.DataSource = null;
+                Grilla.DataSource = DS.Tables["Resultado"];
                 conexion.Close();
             }
             catch (Exception ex)
