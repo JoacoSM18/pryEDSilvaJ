@@ -38,13 +38,13 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
             this.grpEliminarElemento = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.btnEquilibrar = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.RadioButton();
-            this.btn2 = new System.Windows.Forms.RadioButton();
-            this.btn3 = new System.Windows.Forms.RadioButton();
+            this.btnInOrden = new System.Windows.Forms.RadioButton();
+            this.btnPreOrden = new System.Windows.Forms.RadioButton();
+            this.btnPostOrden = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvArbol = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +58,10 @@
             // 
             // trvArbol
             // 
-            this.trvArbol.Location = new System.Drawing.Point(12, 12);
+            this.trvArbol.Location = new System.Drawing.Point(18, 18);
+            this.trvArbol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.trvArbol.Name = "trvArbol";
-            this.trvArbol.Size = new System.Drawing.Size(220, 191);
+            this.trvArbol.Size = new System.Drawing.Size(328, 292);
             this.trvArbol.TabIndex = 0;
             // 
             // grpNuevoElemento
@@ -73,9 +74,11 @@
             this.grpNuevoElemento.Controls.Add(this.txtTramite);
             this.grpNuevoElemento.Controls.Add(this.lblTramite);
             this.grpNuevoElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpNuevoElemento.Location = new System.Drawing.Point(250, 12);
+            this.grpNuevoElemento.Location = new System.Drawing.Point(375, 18);
+            this.grpNuevoElemento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpNuevoElemento.Name = "grpNuevoElemento";
-            this.grpNuevoElemento.Size = new System.Drawing.Size(153, 204);
+            this.grpNuevoElemento.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpNuevoElemento.Size = new System.Drawing.Size(230, 314);
             this.grpNuevoElemento.TabIndex = 24;
             this.grpNuevoElemento.TabStop = false;
             this.grpNuevoElemento.Text = "Nuevo Elemento";
@@ -83,9 +86,10 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(9, 160);
+            this.btnAgregar.Location = new System.Drawing.Point(14, 246);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(138, 31);
+            this.btnAgregar.Size = new System.Drawing.Size(207, 48);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -95,9 +99,10 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(6, 30);
+            this.lblCodigo.Location = new System.Drawing.Point(9, 46);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(57, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(81, 24);
             this.lblCodigo.TabIndex = 4;
             this.lblCodigo.Text = "Codigo: ";
             // 
@@ -105,138 +110,157 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(6, 73);
+            this.lblNombre.Location = new System.Drawing.Point(9, 112);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 16);
+            this.lblNombre.Size = new System.Drawing.Size(89, 24);
             this.lblNombre.TabIndex = 5;
             this.lblNombre.Text = "Nombre: ";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(91, 23);
+            this.txtCodigo.Location = new System.Drawing.Point(136, 35);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(56, 23);
+            this.txtCodigo.Size = new System.Drawing.Size(82, 30);
             this.txtCodigo.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(74, 66);
+            this.txtNombre.Location = new System.Drawing.Point(111, 102);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(73, 23);
+            this.txtNombre.Size = new System.Drawing.Size(108, 30);
             this.txtNombre.TabIndex = 2;
             // 
             // txtTramite
             // 
-            this.txtTramite.Location = new System.Drawing.Point(69, 107);
+            this.txtTramite.Location = new System.Drawing.Point(104, 165);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(73, 23);
+            this.txtTramite.Size = new System.Drawing.Size(108, 30);
             this.txtTramite.TabIndex = 3;
             // 
             // lblTramite
             // 
             this.lblTramite.AutoSize = true;
             this.lblTramite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite.Location = new System.Drawing.Point(7, 114);
+            this.lblTramite.Location = new System.Drawing.Point(10, 175);
+            this.lblTramite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(56, 16);
+            this.lblTramite.Size = new System.Drawing.Size(78, 24);
             this.lblTramite.TabIndex = 6;
             this.lblTramite.Text = "Trámite:";
             // 
             // grpEliminarElemento
             // 
-            this.grpEliminarElemento.Controls.Add(this.button1);
+            this.grpEliminarElemento.Controls.Add(this.btnEliminar);
             this.grpEliminarElemento.Controls.Add(this.cmbCodigo);
             this.grpEliminarElemento.Controls.Add(this.lblCodigo2);
             this.grpEliminarElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEliminarElemento.Location = new System.Drawing.Point(415, 12);
+            this.grpEliminarElemento.Location = new System.Drawing.Point(622, 18);
+            this.grpEliminarElemento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpEliminarElemento.Name = "grpEliminarElemento";
-            this.grpEliminarElemento.Size = new System.Drawing.Size(199, 150);
+            this.grpEliminarElemento.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpEliminarElemento.Size = new System.Drawing.Size(298, 231);
             this.grpEliminarElemento.TabIndex = 25;
             this.grpEliminarElemento.TabStop = false;
             this.grpEliminarElemento.Text = "Elemento a Eliminar";
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 35);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(9, 155);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(266, 54);
+            this.btnEliminar.TabIndex = 26;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // cmbCodigo
             // 
             this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
-            this.cmbCodigo.Location = new System.Drawing.Point(64, 41);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCodigo.Location = new System.Drawing.Point(96, 63);
             this.cmbCodigo.Name = "cmbCodigo";
-            this.cmbCodigo.Size = new System.Drawing.Size(121, 24);
+            this.cmbCodigo.Size = new System.Drawing.Size(180, 33);
             this.cmbCodigo.TabIndex = 14;
             // 
             // lblCodigo2
             // 
             this.lblCodigo2.AutoSize = true;
             this.lblCodigo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo2.Location = new System.Drawing.Point(5, 47);
+            this.lblCodigo2.Location = new System.Drawing.Point(8, 72);
+            this.lblCodigo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo2.Name = "lblCodigo2";
-            this.lblCodigo2.Size = new System.Drawing.Size(57, 16);
+            this.lblCodigo2.Size = new System.Drawing.Size(81, 24);
             this.lblCodigo2.TabIndex = 13;
             this.lblCodigo2.Text = "Codigo: ";
             // 
             // btnEquilibrar
             // 
             this.btnEquilibrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquilibrar.Location = new System.Drawing.Point(415, 172);
+            this.btnEquilibrar.Location = new System.Drawing.Point(622, 265);
+            this.btnEquilibrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEquilibrar.Name = "btnEquilibrar";
-            this.btnEquilibrar.Size = new System.Drawing.Size(183, 35);
+            this.btnEquilibrar.Size = new System.Drawing.Size(274, 54);
             this.btnEquilibrar.TabIndex = 8;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.Click += new System.EventHandler(this.btnEquilibrar_Click);
             // 
-            // btn1
+            // btnInOrden
             // 
-            this.btn1.AutoSize = true;
-            this.btn1.Location = new System.Drawing.Point(23, 31);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(72, 17);
-            this.btn1.TabIndex = 26;
-            this.btn1.TabStop = true;
-            this.btn1.Text = "In - Orden";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btnInOrden.AutoSize = true;
+            this.btnInOrden.Location = new System.Drawing.Point(34, 48);
+            this.btnInOrden.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInOrden.Name = "btnInOrden";
+            this.btnInOrden.Size = new System.Drawing.Size(105, 24);
+            this.btnInOrden.TabIndex = 26;
+            this.btnInOrden.TabStop = true;
+            this.btnInOrden.Text = "In - Orden";
+            this.btnInOrden.UseVisualStyleBackColor = true;
+            this.btnInOrden.CheckedChanged += new System.EventHandler(this.btnInOrden_CheckedChanged);
             // 
-            // btn2
+            // btnPreOrden
             // 
-            this.btn2.AutoSize = true;
-            this.btn2.Location = new System.Drawing.Point(23, 79);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(79, 17);
-            this.btn2.TabIndex = 27;
-            this.btn2.TabStop = true;
-            this.btn2.Text = "Pre - Orden";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btnPreOrden.AutoSize = true;
+            this.btnPreOrden.Location = new System.Drawing.Point(34, 122);
+            this.btnPreOrden.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPreOrden.Name = "btnPreOrden";
+            this.btnPreOrden.Size = new System.Drawing.Size(115, 24);
+            this.btnPreOrden.TabIndex = 27;
+            this.btnPreOrden.TabStop = true;
+            this.btnPreOrden.Text = "Pre - Orden";
+            this.btnPreOrden.UseVisualStyleBackColor = true;
+            this.btnPreOrden.CheckedChanged += new System.EventHandler(this.btnPreOrden_CheckedChanged);
             // 
-            // btn3
+            // btnPostOrden
             // 
-            this.btn3.AutoSize = true;
-            this.btn3.Location = new System.Drawing.Point(23, 124);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(84, 17);
-            this.btn3.TabIndex = 28;
-            this.btn3.TabStop = true;
-            this.btn3.Text = "Post - Orden";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btnPostOrden.AutoSize = true;
+            this.btnPostOrden.Location = new System.Drawing.Point(34, 191);
+            this.btnPostOrden.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPostOrden.Name = "btnPostOrden";
+            this.btnPostOrden.Size = new System.Drawing.Size(123, 24);
+            this.btnPostOrden.TabIndex = 28;
+            this.btnPostOrden.TabStop = true;
+            this.btnPostOrden.Text = "Post - Orden";
+            this.btnPostOrden.UseVisualStyleBackColor = true;
+            this.btnPostOrden.CheckedChanged += new System.EventHandler(this.btnPostOrden_CheckedChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvArbol);
-            this.groupBox1.Controls.Add(this.btn3);
-            this.groupBox1.Controls.Add(this.btn2);
-            this.groupBox1.Controls.Add(this.btn1);
-            this.groupBox1.Location = new System.Drawing.Point(14, 228);
+            this.groupBox1.Controls.Add(this.btnPostOrden);
+            this.groupBox1.Controls.Add(this.btnPreOrden);
+            this.groupBox1.Controls.Add(this.btnInOrden);
+            this.groupBox1.Location = new System.Drawing.Point(21, 351);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(600, 163);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(900, 251);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Arbol";
@@ -251,10 +275,11 @@
             this.colCodigo,
             this.colNombre,
             this.colTramite});
-            this.dgvArbol.Location = new System.Drawing.Point(236, 19);
+            this.dgvArbol.Location = new System.Drawing.Point(354, 29);
+            this.dgvArbol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvArbol.Name = "dgvArbol";
             this.dgvArbol.RowHeadersWidth = 40;
-            this.dgvArbol.Size = new System.Drawing.Size(348, 138);
+            this.dgvArbol.Size = new System.Drawing.Size(522, 212);
             this.dgvArbol.TabIndex = 29;
             // 
             // colCodigo
@@ -280,14 +305,16 @@
             // 
             // frmArbol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 406);
+            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.ClientSize = new System.Drawing.Size(922, 625);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpEliminarElemento);
             this.Controls.Add(this.grpNuevoElemento);
             this.Controls.Add(this.btnEquilibrar);
             this.Controls.Add(this.trvArbol);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Arbol Binario";
@@ -315,13 +342,13 @@
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.GroupBox grpEliminarElemento;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Label lblCodigo2;
         private System.Windows.Forms.Button btnEquilibrar;
-        private System.Windows.Forms.RadioButton btn1;
-        private System.Windows.Forms.RadioButton btn2;
-        private System.Windows.Forms.RadioButton btn3;
+        private System.Windows.Forms.RadioButton btnInOrden;
+        private System.Windows.Forms.RadioButton btnPreOrden;
+        private System.Windows.Forms.RadioButton btnPostOrden;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvArbol;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;

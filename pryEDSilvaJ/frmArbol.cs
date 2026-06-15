@@ -24,11 +24,58 @@ namespace pryEDSilvaJ
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtTramite.Text == "")
+            {
+                MessageBox.Show("Debe Completar Todos Los Campos");
+                return;
+            }
             clsNodo Persona = new clsNodo();
             Persona.Codigo = Convert.ToInt32(txtCodigo.Text);
             Persona.Nombre = txtNombre.Text;
             Persona.Tramite = txtTramite.Text;
             ObjArbol.Agregar(Persona);
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(trvArbol);
+            cmbCodigo.Items.Add(txtCodigo.Text);
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (cmbCodigo.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe Seleccionar un Código para Eliminar");
+                return;
+            }
+            int codigoSeleccionado = Convert.ToInt32(cmbCodigo.SelectedItem.ToString());
+            ObjArbol.Eliminar(codigoSeleccionado);
+            cmbCodigo.Items.Remove(cmbCodigo.SelectedItem);
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(trvArbol);
+        }
+
+        private void btnInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btnInOrden.Checked)
+                ObjArbol.Recorrer(dgvArbol);
+        }
+
+        private void btnPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btnPreOrden.Checked)
+                ObjArbol.Recorrer(trvArbol);
+        }
+        private void btnPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btnPostOrden.Checked)
+                ObjArbol.RecorrerPostOrden(dgvArbol);
+        }
+
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            ObjArbol.Equilibrar();
             ObjArbol.Recorrer(dgvArbol);
             ObjArbol.Recorrer(trvArbol);
         }
