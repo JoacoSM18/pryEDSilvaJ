@@ -20,6 +20,11 @@ namespace pryEDSilvaJ
 
         public void btnGrabarCarrera_Click(object sender, EventArgs e)
         {
+            if (txtCarrera.Text == "")
+            {
+                MessageBox.Show("Debe Ingresar una Carrera");
+                return;
+            }
             clsArchivoTexto objCarrera = new clsArchivoTexto();
             objCarrera.NombArchivo = "Carreras.csv";
             objCarrera.Grabar(txtCarrera.Text);

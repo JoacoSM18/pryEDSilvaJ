@@ -61,6 +61,7 @@ namespace pryEDSilvaJ
                     aux2 = aux1;
                     aux1 = aux1.Siguiente;
                 }
+                aux2.Siguiente = aux1.Siguiente;
             }
         }
         public void Recorrer(DataGridView Grilla)
@@ -89,7 +90,7 @@ namespace pryEDSilvaJ
             Combo.Items.Clear();
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }

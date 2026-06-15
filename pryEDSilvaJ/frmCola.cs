@@ -24,6 +24,11 @@ namespace pryEDSilvaJ
         clsCola fila = new clsCola();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtTramite.Text == "")
+            {
+                MessageBox.Show("Debe Completar Todos Los Campos");
+                return;
+            }
             clsNodo n = new clsNodo();
             n.Codigo = Convert.ToInt32(txtCodigo.Text);
             n.Nombre = txtNombre.Text;

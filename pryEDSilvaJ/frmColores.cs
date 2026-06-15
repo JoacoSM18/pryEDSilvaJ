@@ -30,6 +30,11 @@ namespace pryEDSilvaJ
         }
         private void btnGrabarColor_Click(object sender, EventArgs e)
         {
+            if (txtNombreColor.Text == "")
+            {
+                MessageBox.Show("Debe Ingresar un Color");
+                return;
+            }
             clsArchivoTexto objColor = new clsArchivoTexto();
             objColor.NombArchivo = "Colores.csv";
             objColor.Grabar (txtNombreColor.Text);

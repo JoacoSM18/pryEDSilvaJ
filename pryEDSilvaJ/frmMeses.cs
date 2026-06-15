@@ -27,6 +27,11 @@ namespace pryEDSilvaJ
 
         private void btnGrabarMeses_Click(object sender, EventArgs e)
         {
+            if (txtNombreMeses.Text == "")
+            {
+                MessageBox.Show("Debe Ingresar un Mes");
+                return;
+            }
             clsArchivoTexto objMes = new clsArchivoTexto();
             objMes.NombArchivo = "Meses.csv";
             objMes.Grabar(txtNombreMeses.Text);

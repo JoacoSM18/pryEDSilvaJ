@@ -26,6 +26,11 @@ namespace pryEDSilvaJ
         }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtDeuda.Text == "")
+            {
+                MessageBox.Show("Por Favor, Complete Todos los Campos");
+                return;
+            }
             clsArchivoTexto objCliente = new clsArchivoTexto();
             objCliente.NombArchivo = "Clientes.csv";
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);

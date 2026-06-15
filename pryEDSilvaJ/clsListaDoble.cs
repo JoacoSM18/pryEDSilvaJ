@@ -66,7 +66,7 @@ namespace pryEDSilvaJ
             }
         }
 
-        public void Eliminar (Int32 Codigo)
+        public void Eliminar(Int32 Codigo)
         {
             if (Primero.Codigo == Codigo && Ultimo == Primero)
             {
@@ -88,17 +88,14 @@ namespace pryEDSilvaJ
                         Ultimo.Siguiente = null;
                     }
                     else
-                    { 
+                    {
                         clsNodo aux = Primero;
-                        clsNodo ant = Primero;
-                        while (aux.Codigo < Codigo)
+                        while (aux.Codigo != Codigo)
                         {
-                            ant = aux;
                             aux = aux.Siguiente;
                         }
-                        aux = aux.Siguiente;
-                        aux.Anterior = ant;
-                        ant.Siguiente = aux;
+                        aux.Anterior.Siguiente = aux.Siguiente;
+                        aux.Siguiente.Anterior = aux.Anterior;
                     }
                 }
             }

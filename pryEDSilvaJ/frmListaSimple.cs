@@ -19,6 +19,11 @@ namespace pryEDSilvaJ
         clsListaSimple ListaSimple = new clsListaSimple();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtTramite.Text == "")
+            {
+                MessageBox.Show("Debe Completar Todos Los Campos");
+                return;
+            }
             clsNodo n = new clsNodo();
             n.Codigo = Convert.ToInt32(txtCodigo.Text);
             n.Nombre = txtNombre.Text;
@@ -26,6 +31,7 @@ namespace pryEDSilvaJ
             ListaSimple.Agregar(n);
             ListaSimple.Recorrer(dgvLista);
             ListaSimple.Recorrer(lstLista);
+            ListaSimple.Recorrer(cmbCodigo);
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
@@ -33,30 +39,30 @@ namespace pryEDSilvaJ
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            if (cmbCodigo.SelectedIndex == -1) return;
-            string codigoSeleccionado = cmbCodigo.SelectedItem.ToString();
-            foreach (DataGridViewRow fila in dgvLista.Rows)
+            if (cmbCodigo.SelectedIndex == -1)
             {
-                if (fila.Cells[0].Value.ToString() == codigoSeleccionado)
-                {
-                    dgvLista.Rows.RemoveAt(fila.Index);
-                    break;
-                }
+                MessageBox.Show("Debe Seleccionar un Código para Eliminar");
+                return;
             }
-            foreach (var item in lstLista.Items)
-            {
-                if (item.ToString().Contains(codigoSeleccionado))
-                {
-                    lstLista.Items.Remove(item);
-                    break;
-                }
-            }
-            cmbCodigo.Items.Remove(cmbCodigo.SelectedItem);
+            int codigoSeleccionado = Convert.ToInt32(cmbCodigo.SelectedItem.ToString());
+            ListaSimple.Eliminar(codigoSeleccionado);
+            ListaSimple.Recorrer(dgvLista);
+            ListaSimple.Recorrer(lstLista);
+            ListaSimple.Recorrer(cmbCodigo);
         }
 
         private void frmListaSimple_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Números");
+            }
         }
     }
 }

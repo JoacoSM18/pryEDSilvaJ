@@ -23,33 +23,38 @@ namespace pryEDSilvaJ
 
         }
         clsListaDoble Lista = new clsListaDoble();
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtTramite.Text == "")
+            {
+                MessageBox.Show("Debe Completar Todos Los Campos");
+                return;
+            }
             clsNodo ObjNodo = new clsNodo();
             ObjNodo.Codigo = Convert.ToInt32(txtCodigo.Text);
             ObjNodo.Nombre = txtNombre.Text;
             ObjNodo.Tramite = txtTramite.Text;
-
             Lista.Agregar(ObjNodo);
             Lista.RecorrerAsc(dgvListaDoble);
             Lista.Recorrer (cmbCodigo);
             Lista.Recorrer(lstListaDoble);
             Lista.RecorrerDes(dgvListaDoble);
             Lista.Recorrer("clsListaDoble.csv");
-
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
         }
-
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            if (cmbCodigo.SelectedIndex == -1) return;
+            if (cmbCodigo.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe Seleccionar un Código para Eliminar");
+                return;
+            }
             string codigoSeleccionado = cmbCodigo.SelectedItem.ToString();
             foreach (DataGridViewRow fila in dgvListaDoble.Rows)
             {
-                if (fila.Cells[0].Value.ToString() == codigoSeleccionado)
+                if (!fila.IsNewRow && fila.Cells[0].Value != null && fila.Cells[0].Value.ToString() == codigoSeleccionado)
                 {
                     dgvListaDoble.Rows.RemoveAt(fila.Index);
                     break;
@@ -116,6 +121,15 @@ namespace pryEDSilvaJ
         private void grp3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Números");
+            }
         }
     }
 }

@@ -21,6 +21,11 @@ namespace pryEDSilvaJ
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtCodigo.Text == "" || txtNombre.Text == "" || txtTramite.Text == "")
+            {
+                MessageBox.Show("Debe Completar Todos Los Campos");
+                return;
+            }
             clsNodo nuevo = new clsNodo();
             nuevo.Codigo = Convert.ToInt32(txtCodigo.Text);
             nuevo.Nombre = txtNombre.Text;
