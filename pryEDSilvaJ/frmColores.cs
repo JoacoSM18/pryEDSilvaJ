@@ -41,5 +41,14 @@ namespace pryEDSilvaJ
             objColor.Recorrer(lstColores);
             MessageBox.Show("Color Grabado Correctamente");
         }
+
+        private void txtNombreColor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Letras");
+            }
+        }
     }
 }

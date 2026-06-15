@@ -38,5 +38,14 @@ namespace pryEDSilvaJ
             objMes.Recorrer(lstMeses);
             MessageBox.Show("Mes Grabado Correctamente");
         }
+
+        private void txtNombreMeses_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Letras");
+            }
+        }
     }
 }

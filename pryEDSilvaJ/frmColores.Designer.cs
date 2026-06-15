@@ -53,6 +53,7 @@
             this.txtNombreColor.Name = "txtNombreColor";
             this.txtNombreColor.Size = new System.Drawing.Size(304, 26);
             this.txtNombreColor.TabIndex = 1;
+            this.txtNombreColor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreColor_KeyPress);
             // 
             // btnListarColor
             // 

@@ -37,5 +37,32 @@ namespace pryEDSilvaJ
             objCliente.Recorrer(dgvClientes);
             MessageBox.Show("Cliente Grabado Correctamente");
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Números");
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Letras y/o Espacios");
+            }
+        }
+
+        private void txtDeuda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Números");
+            }
+        }
     }
 }

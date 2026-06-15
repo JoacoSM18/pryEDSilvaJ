@@ -75,6 +75,7 @@
             this.txtNombreMeses.Name = "txtNombreMeses";
             this.txtNombreMeses.Size = new System.Drawing.Size(304, 26);
             this.txtNombreMeses.TabIndex = 6;
+            this.txtNombreMeses.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreMeses_KeyPress);
             // 
             // lblNombreMeses
             // 

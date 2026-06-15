@@ -38,5 +38,14 @@ namespace pryEDSilvaJ
             X.NombArchivo = "Carreras.csv";
             if (File.Exists(X.NombArchivo)) X.Recorrer(lstCarreras);
         }
+
+        private void txtCarrera_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Se Permiten Letras y/o Espacios");
+            }
+        }
     }
 }

@@ -33,5 +33,10 @@ namespace pryEDSilvaJ
         {
 
         }
+
+        private void btnBorrarTodo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
