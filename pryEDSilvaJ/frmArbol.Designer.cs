@@ -205,7 +205,7 @@
             this.btnEquilibrar.Location = new System.Drawing.Point(622, 265);
             this.btnEquilibrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEquilibrar.Name = "btnEquilibrar";
-            this.btnEquilibrar.Size = new System.Drawing.Size(274, 54);
+            this.btnEquilibrar.Size = new System.Drawing.Size(274, 45);
             this.btnEquilibrar.TabIndex = 8;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;

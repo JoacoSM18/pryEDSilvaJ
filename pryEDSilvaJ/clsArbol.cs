@@ -15,6 +15,11 @@ namespace pryEDSilvaJ
             get { return PrimerNodo; }
             set { PrimerNodo = value; }
         }
+        private int cantNodos = 0;
+        public int CantNodos
+        {
+            get { return cantNodos; }
+        }
         public void Agregar(clsNodo Nvo)
         {
             if (Raiz == null)
@@ -34,6 +39,7 @@ namespace pryEDSilvaJ
                 if (Nvo.Codigo < Ant.Codigo) Ant.Izquierdo = Nvo;
                 else Ant.Derecho = Nvo;
             }
+            cantNodos++;
         }
         public void Agregar(DataGridView Grilla) 
         {
@@ -87,6 +93,7 @@ namespace pryEDSilvaJ
         public void Eliminar(int Codigo)
         {
             Raiz = EliminarNodo(Raiz, Codigo);
+            cantNodos--;
         }
 
         private clsNodo EliminarNodo(clsNodo R, int Codigo)

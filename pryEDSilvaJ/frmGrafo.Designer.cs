@@ -54,6 +54,8 @@
             this.lblHasta = new System.Windows.Forms.Label();
             this.lblDesde = new System.Windows.Forms.Label();
             this.dgvViajes = new System.Windows.Forms.DataGridView();
+            this.lblPrecio3D = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.grbCargaDatos.SuspendLayout();
             this.grbConsultaDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +65,7 @@
             // 
             // grbCargaDatos
             // 
+            this.grbCargaDatos.Controls.Add(this.txtPrecio);
             this.grbCargaDatos.Controls.Add(this.cmbDestinos);
             this.grbCargaDatos.Controls.Add(this.cmbOrigenes);
             this.grbCargaDatos.Controls.Add(this.btnCargar);
@@ -153,6 +156,7 @@
             // 
             // grbConsultaDatos
             // 
+            this.grbConsultaDatos.Controls.Add(this.lblPrecio3D);
             this.grbConsultaDatos.Controls.Add(this.cmbDestinos2);
             this.grbConsultaDatos.Controls.Add(this.cmbOrigenes2);
             this.grbConsultaDatos.Controls.Add(this.btnBorrar);
@@ -197,6 +201,7 @@
             this.btnBorrar.TabIndex = 4;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnConsultar
             // 
@@ -207,6 +212,7 @@
             this.btnConsultar.TabIndex = 3;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // lblPrecio2
             // 
@@ -263,46 +269,49 @@
             this.grbListarViajes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbListarViajes.Name = "grbListarViajes";
             this.grbListarViajes.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grbListarViajes.Size = new System.Drawing.Size(1134, 554);
+            this.grbListarViajes.Size = new System.Drawing.Size(1134, 562);
             this.grbListarViajes.TabIndex = 3;
             this.grbListarViajes.TabStop = false;
             this.grbListarViajes.Text = "Listar Viajes";
             // 
             // btnListarDestinos
             // 
-            this.btnListarDestinos.Location = new System.Drawing.Point(346, 46);
+            this.btnListarDestinos.Location = new System.Drawing.Point(320, 47);
             this.btnListarDestinos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnListarDestinos.Name = "btnListarDestinos";
             this.btnListarDestinos.Size = new System.Drawing.Size(129, 35);
             this.btnListarDestinos.TabIndex = 7;
             this.btnListarDestinos.Text = "Listar Destinos";
             this.btnListarDestinos.UseVisualStyleBackColor = true;
+            this.btnListarDestinos.Click += new System.EventHandler(this.btnListarDestinos_Click);
             // 
             // btnVerTodoslosViajes
             // 
-            this.btnVerTodoslosViajes.Location = new System.Drawing.Point(940, 46);
+            this.btnVerTodoslosViajes.Location = new System.Drawing.Point(941, 43);
             this.btnVerTodoslosViajes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerTodoslosViajes.Name = "btnVerTodoslosViajes";
             this.btnVerTodoslosViajes.Size = new System.Drawing.Size(184, 35);
             this.btnVerTodoslosViajes.TabIndex = 6;
             this.btnVerTodoslosViajes.Text = "Ver Todos los Viajes";
             this.btnVerTodoslosViajes.UseVisualStyleBackColor = true;
+            this.btnVerTodoslosViajes.Click += new System.EventHandler(this.btnVerTodoslosViajes_Click);
             // 
             // btnListarOrigenes
             // 
-            this.btnListarOrigenes.Location = new System.Drawing.Point(771, 46);
+            this.btnListarOrigenes.Location = new System.Drawing.Point(738, 46);
             this.btnListarOrigenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnListarOrigenes.Name = "btnListarOrigenes";
             this.btnListarOrigenes.Size = new System.Drawing.Size(160, 35);
             this.btnListarOrigenes.TabIndex = 5;
             this.btnListarOrigenes.Text = "Listar Origenes";
             this.btnListarOrigenes.UseVisualStyleBackColor = true;
+            this.btnListarOrigenes.Click += new System.EventHandler(this.btnListarOrigenes_Click);
             // 
             // cmbHasta
             // 
             this.cmbHasta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHasta.FormattingEnabled = true;
-            this.cmbHasta.Location = new System.Drawing.Point(550, 49);
+            this.cmbHasta.Location = new System.Drawing.Point(550, 50);
             this.cmbHasta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbHasta.Name = "cmbHasta";
             this.cmbHasta.Size = new System.Drawing.Size(180, 28);
@@ -312,7 +321,7 @@
             // 
             this.cmbDesde.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDesde.FormattingEnabled = true;
-            this.cmbDesde.Location = new System.Drawing.Point(87, 42);
+            this.cmbDesde.Location = new System.Drawing.Point(84, 50);
             this.cmbDesde.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbDesde.Name = "cmbDesde";
             this.cmbDesde.Size = new System.Drawing.Size(228, 28);
@@ -321,7 +330,7 @@
             // lblHasta
             // 
             this.lblHasta.AutoSize = true;
-            this.lblHasta.Location = new System.Drawing.Point(484, 54);
+            this.lblHasta.Location = new System.Drawing.Point(486, 53);
             this.lblHasta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.Size = new System.Drawing.Size(56, 20);
@@ -331,7 +340,7 @@
             // lblDesde
             // 
             this.lblDesde.AutoSize = true;
-            this.lblDesde.Location = new System.Drawing.Point(16, 54);
+            this.lblDesde.Location = new System.Drawing.Point(17, 54);
             this.lblDesde.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDesde.Name = "lblDesde";
             this.lblDesde.Size = new System.Drawing.Size(60, 20);
@@ -348,11 +357,26 @@
             this.dgvViajes.Size = new System.Drawing.Size(1094, 420);
             this.dgvViajes.TabIndex = 0;
             // 
+            // lblPrecio3D
+            // 
+            this.lblPrecio3D.Location = new System.Drawing.Point(143, 154);
+            this.lblPrecio3D.Name = "lblPrecio3D";
+            this.lblPrecio3D.Size = new System.Drawing.Size(150, 23);
+            this.lblPrecio3D.TabIndex = 7;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(177, 154);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(180, 26);
+            this.txtPrecio.TabIndex = 7;
+            // 
             // frmGrafo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 900);
+            this.BackColor = System.Drawing.Color.LightPink;
+            this.ClientSize = new System.Drawing.Size(1176, 934);
             this.Controls.Add(this.grbListarViajes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grbConsultaDatos);
@@ -402,5 +426,7 @@
         private System.Windows.Forms.Button btnListarOrigenes;
         private System.Windows.Forms.ComboBox cmbHasta;
         private System.Windows.Forms.ComboBox cmbDesde;
+        private System.Windows.Forms.Label lblPrecio3D;
+        private System.Windows.Forms.TextBox txtPrecio;
     }
 }

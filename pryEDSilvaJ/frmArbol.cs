@@ -59,22 +59,36 @@ namespace pryEDSilvaJ
         private void btnInOrden_CheckedChanged(object sender, EventArgs e)
         {
             if (btnInOrden.Checked)
+            {
+                if (ObjArbol.CantNodos == 0) { MessageBox.Show("No Hay Nodos Cargados"); return; }
                 ObjArbol.Recorrer(dgvArbol);
+            }
         }
 
         private void btnPreOrden_CheckedChanged(object sender, EventArgs e)
         {
             if (btnPreOrden.Checked)
+            {
+                if (ObjArbol.CantNodos == 0) { MessageBox.Show("No Hay Nodos Cargados"); return; }
                 ObjArbol.Recorrer(trvArbol);
+            }
         }
         private void btnPostOrden_CheckedChanged(object sender, EventArgs e)
         {
             if (btnPostOrden.Checked)
+            {
+                if (ObjArbol.CantNodos == 0) { MessageBox.Show("No Hay Nodos Cargados"); return; }
                 ObjArbol.RecorrerPostOrden(dgvArbol);
+            }
         }
 
         private void btnEquilibrar_Click(object sender, EventArgs e)
         {
+            if (ObjArbol.CantNodos < 3)
+            {
+                MessageBox.Show("Debe Haber al Menos 3 Nodos Para Poder Equilibrar");
+                return;
+            }
             ObjArbol.Equilibrar();
             ObjArbol.Recorrer(dgvArbol);
             ObjArbol.Recorrer(trvArbol);
