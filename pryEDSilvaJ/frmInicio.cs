@@ -103,5 +103,11 @@ namespace pryEDSilvaJ
             frmConsultaSQL x = new frmConsultaSQL();
             x.ShowDialog();
         }
+
+        private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperacionesBD x = new frmOperacionesBD();
+            x.ShowDialog();
+        }
     }
 }

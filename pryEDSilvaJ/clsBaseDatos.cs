@@ -14,8 +14,8 @@ namespace pryEDSilvaJ
         private OleDbConnection conexion = new OleDbConnection();
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
-        private string cadenaConexion1 = "Provider=Micorsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
-        private string cadenaConexion2 = "Provider=Micorsoft.Jet.OLEDB.12.0;Data Source=Libreria.mdb";
+        private string cadenaConexion1 = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
+        private string cadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
 
 
         public void Listar(DataGridView Grilla)

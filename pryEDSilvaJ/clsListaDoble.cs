@@ -127,7 +127,7 @@ namespace pryEDSilvaJ
             Combo.Items.Clear();
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }
@@ -137,7 +137,7 @@ namespace pryEDSilvaJ
             ListaBox.Items.Clear();
             while (aux != null)
             {
-                ListaBox.Items.Add(aux.Nombre);
+                ListaBox.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }

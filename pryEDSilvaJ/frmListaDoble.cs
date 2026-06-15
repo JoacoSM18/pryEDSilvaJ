@@ -51,24 +51,11 @@ namespace pryEDSilvaJ
                 MessageBox.Show("Debe Seleccionar un Código para Eliminar");
                 return;
             }
-            string codigoSeleccionado = cmbCodigo.SelectedItem.ToString();
-            foreach (DataGridViewRow fila in dgvListaDoble.Rows)
-            {
-                if (!fila.IsNewRow && fila.Cells[0].Value != null && fila.Cells[0].Value.ToString() == codigoSeleccionado)
-                {
-                    dgvListaDoble.Rows.RemoveAt(fila.Index);
-                    break;
-                }
-            }
-            foreach (var item in lstListaDoble.Items)
-            {
-                if (item.ToString().Contains(codigoSeleccionado))
-                {
-                    lstListaDoble.Items.Remove(item);
-                    break;
-                }
-            }
-            cmbCodigo.Items.Remove(cmbCodigo.SelectedItem);
+            int codigoSeleccionado = Convert.ToInt32(cmbCodigo.SelectedItem.ToString());
+            Lista.Eliminar(codigoSeleccionado);
+            Lista.RecorrerAsc(dgvListaDoble);
+            Lista.Recorrer(lstListaDoble);
+            Lista.Recorrer(cmbCodigo);
         }
 
         private void btnAsc_CheckedChanged(object sender, EventArgs e)
