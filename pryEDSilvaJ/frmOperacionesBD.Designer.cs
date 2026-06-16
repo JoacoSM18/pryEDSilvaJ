@@ -189,7 +189,7 @@
             this.dgvBD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvBD.Name = "dgvBD";
             this.dgvBD.RowHeadersWidth = 62;
-            this.dgvBD.Size = new System.Drawing.Size(1164, 425);
+            this.dgvBD.Size = new System.Drawing.Size(1164, 430);
             this.dgvBD.TabIndex = 4;
             // 
             // frmOperacionesBD
