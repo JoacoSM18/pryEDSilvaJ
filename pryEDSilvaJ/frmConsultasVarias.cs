@@ -21,7 +21,6 @@ namespace pryEDSilvaJ
         private void btnListar_Click(object sender, EventArgs e)
         {
             String varSQL = "";
-
             switch (cmbOperacion.SelectedItem.ToString())
             {
                 case "Proyección Simple":

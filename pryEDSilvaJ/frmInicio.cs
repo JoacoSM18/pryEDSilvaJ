@@ -115,5 +115,11 @@ namespace pryEDSilvaJ
             frmGrafo x = new frmGrafo();
             x.ShowDialog();
         }
+
+        private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasVarias x = new frmConsultasVarias();
+            x.ShowDialog();
+        }
     }
 }
