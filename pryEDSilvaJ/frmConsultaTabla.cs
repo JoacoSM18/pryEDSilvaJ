@@ -20,7 +20,7 @@ namespace pryEDSilvaJ
         private void btnListar_Click(object sender, EventArgs e)
         {
             clsBaseDatos bd = new clsBaseDatos();
-            bd.Listar1(cmbTablas.Text, dgvDatos);
+            bd.Listar(cmbTablas.Text, dgvDatos);
         }
     }
 }

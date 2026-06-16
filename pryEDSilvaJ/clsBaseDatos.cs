@@ -16,69 +16,81 @@ namespace pryEDSilvaJ
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
         private string cadenaConexion1 = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
         private string cadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
-
-
         public void Listar(DataGridView Grilla)
         {
             try
             {
                 conexion.ConnectionString = cadenaConexion1;
                 conexion.Open();
+
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = "Libro";
+
                 DataSet DS = new DataSet();
                 adaptador = new OleDbDataAdapter(comando);
                 adaptador.Fill(DS, "Libro");
+
+                Grilla.DataSource = null;
                 Grilla.DataSource = DS.Tables["Libro"];
+
                 conexion.Close();
             }
-            catch (Exception ex)
+            catch (Exception x)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(x.Message);
             }
         }
-        public void Listar1(String tabla, DataGridView Grilla)
+
+        public void Listar(String tabla, DataGridView Grilla)
         {
             try
             {
                 conexion.ConnectionString = cadenaConexion1;
                 conexion.Open();
+
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = tabla;
+
                 DataSet DS = new DataSet();
                 adaptador = new OleDbDataAdapter(comando);
                 adaptador.Fill(DS, tabla);
+
                 Grilla.DataSource = null;
                 Grilla.DataSource = DS.Tables[tabla];
+
                 conexion.Close();
             }
-            catch (Exception ex)
+            catch (Exception x)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(x.Message);
                 conexion.Close();
             }
         }
-        public void Listar(DataGridView Grilla, String varInstrucionSQL)
+        public void Listar(DataGridView Grilla, String varInstruccionSQL)
         {
             try
             {
                 conexion.ConnectionString = cadenaConexion1;
                 conexion.Open();
+
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = varInstrucionSQL;
-                adaptador = new OleDbDataAdapter(comando);
+                comando.CommandText = varInstruccionSQL;
+
                 DataSet DS = new DataSet();
+                adaptador = new OleDbDataAdapter(comando);
                 adaptador.Fill(DS, "Resultado");
+
                 Grilla.DataSource = null;
                 Grilla.DataSource = DS.Tables["Resultado"];
+
                 conexion.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(e.Message);
                 conexion.Close();
             }
         }
